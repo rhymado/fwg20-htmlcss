@@ -1,0 +1,36 @@
+/* selector {declaration} */
+/* 
+    jenis selector
+    1. selector element => menggunakan nama elemen ex. body, link, a, nav
+    2. selector class => menggunakan nama class yg diawali dengan . ex. .header .login-form
+    3. selector id => menggunakan nama id yg diawali dengan # ex. #username, #password
+*/
+
+/* custom var */
+:root {
+  /* --bg-color-1: #16b74e; */
+  --bg-color-1: #61d8de;
+  --bg-color-2: #7c70e6;
+  --bg-color-3: #e839f6;
+}
+
+/* normalisasi style */
+* {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to top right, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* 100 viewport height => 100% tinggi dari tampilan browser */
+}
+
+.btn {
+  background-image: linear-gradient(to right, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
+  color: white;
+}
+
+.container {
+  background-color: white;
+}

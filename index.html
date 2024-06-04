@@ -8,13 +8,50 @@
     <link rel="icon" type="image/png" sizes="32x32" href="public/icon/fazz/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="public/icon/fazz/favicon-16x16.png" />
     <link rel="manifest" href="public/icon/fazz/site.webmanifest" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
+  <!-- body merupakan container terluar -->
   <body>
-    <div>container</div>
-    <p>paragraf</p>
-    <header>header</header>
-    <nav>navigation</nav>
-    <label for="">Email</label>
-    <input type="text" />
+    <!-- main disini berperan sbg container kedua yg berisikan konten utama -->
+    <main class="container">
+      <header>
+        <p>Login</p>
+      </header>
+      <section>
+        <!-- login form -->
+        <form>
+          <!-- bisa menggunakan trick emmet untuk membuat beberapa elemen sekaligus -->
+          <label for="username">Username</label>
+          <div>
+            <img src="/public/images/form-icon.png" alt="user-icon" />
+            <input type="text" placeholder="Type your username" id="username" />
+          </div>
+          <label for="password">Password</label>
+          <div>
+            <img src="/public/images/form-icon.png" alt="pwd-icon" />
+            <input type="text" placeholder="Type your password" id="password" />
+          </div>
+          <p>Forgot password?</p>
+          <button class="btn" type="submit">LOGIN</button>
+        </form>
+      </section>
+      <section>
+        <!-- sign up option -->
+        <section>
+          <!-- other sign up -->
+          <p>Or Signup Using</p>
+          <div>
+            <img src="" alt="facebook-icon" />
+            <img src="" alt="twitter-icon" />
+            <img src="" alt="google-icon" />
+          </div>
+        </section>
+        <section>
+          <!-- original sign up -->
+          <p>Or Signup Using</p>
+          <button>SIGN UP</button>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
