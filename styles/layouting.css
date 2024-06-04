@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  min-height: 100vh;
+}
+
+.container {
+  height: 50vh;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.item {
+  /* height: 50px;
+  width: 50px; */
+  border: 2px solid darkblue;
+  background-color: rgb(79, 79, 79);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas:
+    "satu dua tiga"
+    "empat lima lima";
+}
