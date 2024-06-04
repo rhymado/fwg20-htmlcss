@@ -29,8 +29,20 @@ body {
 .btn {
   background-image: linear-gradient(to right, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
   color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+/* pseudo class */
+.btn:hover {
+  background-image: linear-gradient(to left, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3));
 }
 
 .container {
   background-color: white;
+}
+
+/* pseudo element */
+header > p::first-letter {
+  color: red;
 }
