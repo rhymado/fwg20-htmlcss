@@ -33,9 +33,31 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: 100px 200px;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
-    "satu dua tiga"
-    "empat lima lima";
+    "satu dua"
+    "tiga lima"
+    "empat lima";
+}
+
+@media screen and (min-width: 426px) {
+  .grid {
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "lima dua"
+      "tiga satu"
+      "empat satu";
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+      "satu dua tiga"
+      "empat lima lima";
+  }
 }
