@@ -17,6 +17,7 @@
 /* normalisasi style */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,6 +44,113 @@ body {
 }
 
 /* pseudo element */
-header > p::first-letter {
+/* header > p::first-letter {
   color: red;
+} */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    ". . ."
+    ". a ."
+    ". . .";
+}
+
+/* main {}
+.container {} */
+main[class="container"] {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+main header {
+  flex: 2;
+  position: relative;
+}
+
+main section {
+  flex: 5;
+}
+
+header p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+
+main .login {
+  width: 100%;
+  padding: 10px;
+}
+
+form {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+form .input-group {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+#forgot {
+  color: grey;
+  text-align: right;
+  margin-bottom: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+form .btn {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 18px;
+  font-weight: 400;
+}
+
+main .signup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+section section:last-child {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+section section:last-child p {
+  margin-top: auto;
 }

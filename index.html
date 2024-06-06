@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FWG 20 | WELCOME</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="public/icon/fazz/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="public/icon/fazz/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="public/icon/fazz/favicon-16x16.png" />
-    <link rel="manifest" href="public/icon/fazz/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/fazz/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/fazz/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/fazz/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/icon/emote/site.webmanifest" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <!-- body merupakan container terluar -->
@@ -17,42 +17,44 @@
       <header>
         <p>Login</p>
       </header>
-      <section>
+      <section class="login">
         <!-- login form -->
         <form>
           <!-- bisa menggunakan trick emmet untuk membuat beberapa elemen sekaligus -->
           <label for="username">Username</label>
-          <div>
-            <img src="/public/images/form-icon.png" alt="user-icon" />
-            <input type="text" placeholder="Type your username" id="username" />
+          <div class="input-group">
+            <img src="./assets/images/form-icon.png" alt="user-icon" />
+            <input type="text" placeholder="Type your username" id="username" autocomplete="username" />
           </div>
           <label for="password">Password</label>
-          <div>
-            <img src="/public/images/form-icon.png" alt="pwd-icon" />
-            <input type="text" placeholder="Type your password" id="password" />
+          <div class="input-group">
+            <img src="./assets/images/form-icon.png" alt="pwd-icon" />
+            <input type="password" placeholder="Type your password" id="password" />
           </div>
-          <p>Forgot password?</p>
+          <p id="forgot">Forgot password?</p>
           <button class="btn" type="submit">LOGIN</button>
         </form>
       </section>
-      <section>
+      <section class="signup">
         <!-- sign up option -->
         <section>
           <!-- other sign up -->
           <p>Or Signup Using</p>
           <div>
-            <img src="" alt="facebook-icon" />
-            <img src="" alt="twitter-icon" />
-            <img src="" alt="google-icon" />
+            <img src="./assets/images/facebook.png" alt="facebook-icon" />
+            <img src="./assets/images/Twitter.png" alt="twitter-icon" />
+            <img src="./assets/images/Google.png" alt="google-icon" />
           </div>
         </section>
         <section>
           <!-- original sign up -->
           <p>Or Signup Using</p>
-          <button>SIGN UP</button>
-          <a href="/pages/position.html">
-            <button>POSITION</button>
-          </a>
+          <div>
+            <button>SIGN UP</button>
+            <a href="/pages/position.html">
+              <button>POSITION</button>
+            </a>
+          </div>
         </section>
       </section>
     </main>
