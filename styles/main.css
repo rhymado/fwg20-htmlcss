@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -558,33 +558,45 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 426px) {
   .container {
-    max-width: 640px;
+    max-width: 426px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 641px) {
   .container {
-    max-width: 768px;
+    max-width: 641px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .container {
-    max-width: 1024px;
+    max-width: 769px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1025px) {
   .container {
-    max-width: 1280px;
+    max-width: 1025px;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1281px) {
   .container {
-    max-width: 1536px;
+    max-width: 1281px;
+  }
+}
+
+@media (min-width: 1537px) {
+  .container {
+    max-width: 1537px;
+  }
+}
+
+@media (min-width: 2041px) {
+  .container {
+    max-width: 2041px;
   }
 }
 
@@ -610,12 +622,59 @@ video {
   position: sticky;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-halfscreen {
+  height: 50vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-custom {
+  grid-template-columns: 100px minmax(100px, 1fr) 200px;
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 216 222 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 112 230 / var(--tw-bg-opacity));
+}
+
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 57 246 / var(--tw-bg-opacity));
+}
+
+.text-10xl {
+  font-size: 10rem;
 }
 
 .text-3xl {
@@ -628,4 +687,28 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+/* default style per elemen */
+
+/* untuk bikin utility class baru */
+
+/* untuk bikin component class */
+
+@media (min-width: 426px) {
+  .tbt\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 769px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 2041px) {
+  .uw\:grid-cols-custom {
+    grid-template-columns: 100px minmax(100px, 1fr) 200px;
+  }
 }

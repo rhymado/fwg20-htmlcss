@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* default style per elemen */
+@layer base {
+}
+
+/* untuk bikin utility class baru */
+@layer utilities {
+}
+
+/* untuk bikin component class */
 @layer components {
   .header {
     @apply text-3xl font-bold underline;
